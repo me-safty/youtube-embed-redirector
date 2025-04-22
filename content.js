@@ -1,6 +1,5 @@
 // Redirects YouTube video pages to their embed version, even on SPA navigation
 (function() {
-  console.log(location.href)
   function redirectIfNeeded() {
     if (window.location.pathname === '/watch') {
       const url = new URL(window.location.href);
