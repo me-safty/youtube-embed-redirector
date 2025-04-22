@@ -3,12 +3,15 @@
   "name": "YouTube Embed Redirector",
   "version": "1.0",
   "description": "Redirects YouTube video pages to their embed version automatically.",
-  "permissions": [],
+  "permissions": ["tabs"],
   "content_scripts": [
     {
       "matches": ["https://www.youtube.com/*"],
       "js": ["content.js"],
       "run_at": "document_start"
     }
-  ]
+  ],
+  "action": {
+    "default_popup": "popup.html"
+  }
 }
